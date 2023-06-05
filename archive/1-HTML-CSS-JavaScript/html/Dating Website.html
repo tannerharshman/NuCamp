@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dating Website</title>
+</head>
+<body>
+    <style>body{
+        font-family: verdana, arial, sans-serif;
+    }</style>
+    <h1>Enter Your Details For Our Dating Website </h1>
+    <form a="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata" method="post" enctype="multipart/form-data">
+       <fieldset><style>fieldset{
+        background: lavender;
+        border: 10px solid darkblue;
+        border-radius: 20px;
+        margin-bottom: 10px;
+        width:720px;
+    }</style>
+        <legend>Your Face</legend>
+        <div><style>div:hover{
+            color: blue;
+            
+            }<style>div{
+            margin:10px;
+        }</style>
+            <label for="avatar"><style>label{
+                display:inline-block;
+                text-align: right;
+                vertical-align: top;
+                width: 200px;}</style>
+            Upload Your Image:</label>
+            <input type="file" id="avatar" name="avatar" required> 
+        </div>
+        <p>Image Preview<style>p{
+            margin:0
+        }</style> </p>
+        <img id="preview" width="500">
+       </fieldset>
+       <fieldset><style>fieldset{
+        background: lavender;
+        border: 10px solid darkblue;
+        border-radius: 20px;
+        margin-bottom: 10px;
+        width:720px;
+    }</style>
+        <legend><style>legend{
+            background: purple;
+            border-radius: 10px;
+            color: white;
+            padding: 12px;
+        }</style>Your Details</legend>
+        <div><style>div:hover{
+            color: blue;
+            
+            }<style>div{
+            margin:10px;
+        }</style><style>div{
+            margin:10px;
+        }</style>
+            <label for="name"><style>label{
+                display:inline-block;
+                text-align: right;
+                vertical-align: top;
+                width: 200px;}</style>Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Full Name"required>
+            
+        </div>
+        <div><style>div:hover{
+            color: blue;
+            
+            }<style>div{
+            margin:10px;
+        }</style><style>div{
+            margin:10px;
+        }</style>
+            <label><style>label{
+                display:inline-block;
+                text-align: right;
+                vertical-align: top;
+                width: 200px;}</style>
+                <style>input[type="radio"]+label, input[type="checkbox"]+label{
+                    width: auto;
+                }</style>Gender:</label>
+            <input type="radio" id="woman" name="gender" value="woman" required>
+            <label for="woman"><style>input[type="radio"]+label, input[type="checkbox"]+label{
+                width: auto;
+            }</style><style>label{
+                display:inline-block;
+                text-align: right;
+                vertical-align: top;
+                width: 200px;}</style>Woman</label>
+            <input type="radio" id="man" name="gender" value="man">
+            <label for="man"><style>label{
+                display:inline-block;
+                text-align: right;
+                vertical-align: top;
+                width: 200px;}</style>Man</label>
+        </div>
+        <div><style>div:hover{
+            color: blue;
+            
+            }<style>div{
+            margin:10px;
+        }</style>
+            <label for="age"><style>label{
+                display:inline-block;
+                text-align: right;
+                vertical-align: top;
+                width: 200px;}</style>Age:</label>
+            <input type="number" id="age" name="age">
+        </div>
+        <div><style>div:hover{
+            color: blue;
+            
+            }<style>div{
+            margin:10px;
+        }</style>
+            <label for="dob"><style>label{
+                display:inline-block;
+                text-align: right;
+                vertical-align: top;
+                width: 200px;}</style>Date of Birth:</label>
+            <input type="dob" id="dob" name="dob" placeholder="mm/dd/yyyy">
+        </div>
+        <div><style>div:hover{
+            color: blue;
+            
+            }<style>div{
+            margin:10px;
+        }</style>
+            <label for="color"><style>label{
+                display:inline-block;
+                text-align: right;
+                vertical-align: top;
+                width: 200px;}</style>Favorite Color:</label>
+            <input type="color" id="'color" name="color">
+        </div>
+        <div><style>div:hover{
+            color: blue;
+            
+            }<style>div{
+            margin:10px;
+        }</style>
+            <label for="country"><style>label{
+                display:inline-block;
+                text-align: right;
+                vertical-align: top;
+                width: 200px;}</style>
+                Country:
+            </label>
+            <select id="country" name="country">
+                <option>Chose A Country</option>
+            <option value="Brazil">Brazil</option>
+            <option value="France">France</option>
+            <option value="japan">Japan</option>
+            <option value="libya">Libya</option>
+            <option value="usa">U.S.A.</option>
+            </select>
+        </div>
+        <div><style>div:hover{
+            color: blue;
+            
+            }<style>div{
+            margin:10px;
+        }</style>
+            <label for="salary"><style>label{
+                display:inline-block;
+                text-align: right;
+                vertical-align: top;
+                width: 200px;}</style>Salary:</label>
+            <span class="range-caption"><style>.range-caption{
+                background: darkcyan;
+                color:white;
+                padding: 6px;
+                text-align: center;</style>Poor</span>
+            <input type="range" id="salary" name="salary" min="0" max="'100" value="50">
+            <span class="range-caption">Rich</span>
+        </div>
+       </fieldset>
+       <fieldset><style>fieldset{
+        background: lavender;
+        border: 10px solid darkblue;
+        border-radius: 20px;
+        margin-bottom: 10px;
+        width:720px;
+    }</style>
+        <legend>Your Contact Information</legend>
+        <div><style>div:hover{
+            color: blue;
+            
+            }<style>div{
+            margin:10px;
+        }</style>
+            <label for="email"><style>label{
+                display:inline-block;
+                text-align: right;
+                vertical-align: top;
+                width: 200px;}</style>Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div><style>div:hover{
+            color: blue;
+            
+            }<style>div{
+            margin:10px;
+        }</style>
+            <label for="phone"><style>label{
+                display:inline-block;
+                text-align: right;
+                vertical-align: top;
+                width: 200px;}</style>Phone:</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
+        <div><style>div:hover{
+            color: blue;
+            
+            }<style>div{
+            margin:10px;
+        }</style>
+            <label for="address"><style>label{
+                display:inline-block;
+                text-align: right;
+                vertical-align: top;
+                width: 200px;}</style>Address:</label>
+            <textarea cols="40" id="address"></textarea>
+        </div>
+        <div><style>div:hover{
+            color: blue;
+            
+            }<style>div{
+            margin:10px;
+        }</style>
+            <label><style>label{
+                display:inline-block;
+                text-align: right;
+                vertical-align: top;
+                width: 200px;}</style>Contact method(s):</label>
+            <input type="checkbox" name="contact" id="emailCheckbox" value="email">
+            <label for="emailCheckbox"><style>input[type="radio"]+label, input[type="checkbox"]+label{
+                width: auto;
+            }</style><style>label{
+                display:inline-block;
+                text-align: right;
+                vertical-align: top;
+                width: 200px;}</style>Email</label>
+            <input type="checkbox" name="contact" id="phoneCheckbox" value="phone">
+            <label for="phoneCheckbox"><style>input[type="radio"]+label, input[type="checkbox"]+label{
+                width: auto;
+            }</style><style>label{
+                display:inline-block;
+                text-align: right;
+                vertical-align: top;
+                width: 200px;}</style>Phone</label>
+        </div>
+       </fieldset>
+       <div type="submit"><style>div:hover{
+        color: blue;
+        
+        }<style>div{
+        margin:10px;
+    }</style><style>input[type="submit"]{
+        background: darkcyan;
+        color: white;
+        font-size: 20px;
+        padding: 12px;<style>div{
+        margin:10px;</style>
+    
+        <input type="submit" value='Submit'>
+        
+       </div>
+    </form>
+    <script src="https://url.nucamp.co/datingjs"></script>
+</body>
+</html>

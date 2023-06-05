@@ -1,0 +1,31 @@
+h1{
+    text-align: center;
+    border: 4mm ridge purple;
+    border-radius: 100%;
+   
+}
+body{
+    background-color: black;
+    color:chartreuse;
+    font-family:fantasy, sans-serif;
+}
+section{
+    text-align: center;
+    
+    
+}
+h2{
+    text-align: center;
+    border: 2mm ridge purple;
+    border-radius: 100%;
+    
+}
+ul{
+    text-align: center;
+}
+
+img{
+    border-radius: 50%;
+    border:4mm purple groove;
+    
+}

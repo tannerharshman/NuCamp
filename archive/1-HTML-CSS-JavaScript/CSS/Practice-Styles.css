@@ -1,0 +1,54 @@
+body {
+    background: #7fdbff;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+h1 {
+    color: #85144b;
+    font: 32px, bold Garamond, Helvetica, serif;
+    text-align: center;
+    
+}
+h2{
+    color: #85144b;
+    text-align: center;
+}
+p{
+    color: #85144b;
+    text-align: center;
+}
+address{
+    color: #85144b;
+    text-align: center;
+}
+
+table {
+    color: #85144b;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto
+    
+}
+
+thead {
+    text-align: center;
+    color: #85144b;
+}
+
+label {
+    display: block;
+    color: #85144b;
+    text-align: center;
+}
+
+#submit-btn {
+    display:inline;
+    color: #85144b;
+    text-align: center;
+   
+}
+section{
+    text-align: center;
+}
+
+
